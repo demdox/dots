@@ -10,7 +10,6 @@
 ;(load-theme 'monokai t)
 (load-theme 'leuven-dark t)
 
-
 (require 'package)
 (setq package-archives
       '(("gnu"	. "https://elpa.gnu.org/packages/")
@@ -25,3 +24,11 @@
 (evil-collection-init)
 
 (package-initialize)
+
+;; C SETUP: Indenting + Electirc pair mode
+(setq c-default-style "linux"
+      c-basic-offset 4)
+
+(electric-pair-mode 1)
+
+
