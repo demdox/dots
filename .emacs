@@ -25,10 +25,13 @@
 
 (package-initialize)
 
-;; C SETUP: Indenting + Electirc pair mode
+;; Indenting for C
 (setq c-default-style "linux"
       c-basic-offset 4)
 
 (electric-pair-mode 1)
+
+;; Custom key binds
+(global-set-key (kbd "C-c i") 'eshell) 
 
 
