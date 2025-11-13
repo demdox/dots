@@ -6,9 +6,8 @@
 (global-display-line-numbers-mode t)
 (setq inhibit-splash-screen t)
 
-;(load-theme 'wombat t)
-;(load-theme 'monokai t)
 (load-theme 'leuven-dark t)
+(set-frame-parameter nil 'alpha-background 88)
 
 (require 'package)
 (setq package-archives
@@ -33,5 +32,3 @@
 
 ;; Custom key binds
 (global-set-key (kbd "C-c i") 'eshell) 
-
-
